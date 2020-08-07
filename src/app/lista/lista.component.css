@@ -1,0 +1,18 @@
+.escritores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.escritor {
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.escritor img {
+    width: 100%;
+}

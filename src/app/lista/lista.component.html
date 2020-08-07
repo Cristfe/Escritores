@@ -1,0 +1,17 @@
+<select (change)="onChange($event)">
+    <option value="todos">Todos</option>
+    <option value="españa">España</option>
+    <option value="reino unido">Reino Unido</option>
+    <option value="chile">Chile</option>
+    <option value="canadá">Canadá</option>
+</select>
+
+<button (click)="onClick()">Agregar Escritor</button>
+
+<div class="escritores">
+    <div class="escritor" *ngFor="let escritor of escritores" [routerLink]="['/escritores', escritor.id, 'libros']">
+        <h3>{{escritor.nombre}} {{escritor.apellidos}}</h3>
+        <img [src]="escritor.imagen" alt="">
+        <p>{{ escritor.pais }}</p>
+    </div>
+</div>
